@@ -27,7 +27,7 @@
             <div class="form_column">
               <label class="label_form_select">
                 <p>Как часто вы заходите на сайт?</p>
-                <select name="feedback" required="required">
+                <select class="feedback" required="required">
                   <option value="">Почти каждый день</option>
                   <option>Раз в несколько дней</option>
                   <option>Раз в несколько недель</option>
@@ -39,12 +39,13 @@
               <form>
                 <p>Вы подписаны на e-mail рассылку?</p>
                 <label>
-                  <input type="radio" name="question">
-                  Да
+                  <input class="radio_q" type="radio" name="question" required>
+                  <span class="radio_text"> Да </span>
                 </label>
+
                 <label>
-                  <input type="radio" name="question">
-                  Нет
+                  <input class="radio_q" type="radio" name="question" required>
+                  <span class="radio_text">Нет</span>
                 </label>
               </form>
             </div>
@@ -52,9 +53,11 @@
               <form>
                 <label>
                   <p>Расскажите, какой контент вы хотели бы видеть на нашем сайте?</p>
-                  <textarea rows="3" cols="30" name="text" placeholder="Может, больше рецептов?"></textarea>
+                  <textarea class="text_input" rows="3" cols="30" name="text" placeholder="Может, больше рецептов?"></textarea>
                 </label>
-                <button>Отправить</button>
+                <div class="form_column">
+                  <button class="pupup_button">Отправить</button>
+                </div>
               </form>
             </div>
           </form>
@@ -72,6 +75,9 @@
           <a href="#0"><img src="svg/noemi-logo.svg" width=180px alt="Логотип компании Noemi"></a>
         </div>
         <nav class="menu">
+          <div class="burger_menu">
+            <button class="menu_button"><span class="menu_button_name">Открыть меню</span></button>
+          </div>
           <ul class="links">
             <li class="link-item"><a href="#0">Главная</a></li>
             <li class="link-item"><a href="#0">Посты</a></li>
@@ -154,7 +160,7 @@
     <main class="content">
       <section class="topic">
         <div class="topic-img">
-          <img src="img/last-post1.jpg" width=380px alt="Песчанный пляж">
+          <img src="img/last-post1.jpg" width=100% alt="Песчанный пляж">
         </div>
         <article class="post">
           <ul class="topic-tag">
@@ -177,7 +183,7 @@
 
       <section class="topic">
         <div class="topic-img">
-          <img src="img/last-post2.jpg" width=380px alt="Упражнения на берегу моря">
+          <img src="img/last-post2.jpg" width=100% alt="Упражнения на берегу моря">
         </div>
         <article class="post">
           <ul class="topic-tag">
@@ -199,7 +205,7 @@
 
       <section class="topic">
         <div class="topic-img">
-          <img src="img/last-post3.jpg" width=380px alt="Музыкальный фестеваль">
+          <img src="img/last-post3.jpg" width=100% alt="Музыкальный фестеваль">
         </div>
         <article class="post">
           <ul class="topic-tag">
@@ -222,7 +228,7 @@
 
       <section class="topic">
         <div class="topic-img">
-          <img src="img/last-post4.jpg" width=380px alt="Накрытый стол">
+          <img src="img/last-post4.jpg" width=100% alt="Накрытый стол">
         </div>
         <article class="post">
           <ul class="topic-tag">
@@ -244,7 +250,7 @@
 
       <section class="topic">
         <div class="topic-img">
-          <img src="img/last-post5.jpg" width=380px alt="Подушка на кровати">
+          <img src="img/last-post5.jpg" width=100% alt="Подушка на кровати">
         </div>
         <article class="post">
           <ul class="topic-tag">
@@ -503,16 +509,11 @@
   <footer class="social">
     <div class="social-block">
       <ul class="social-list">
-        <li class="social-item"><a href="#0" class="social-icon social-twitter"></a></li>
-        <span class="form-hint">Профиль компании в Twitter</span>
-        <li class="social-item"><a href="#0" class="social-icon social-painterest"></a></li>
-        <span class="form-hint">Профиль компании в Painterestr</span>
-        <li class="social-item"><a href="#0" class="social-icon social-facebook"></a></li>
-        <span class="form-hint">Профиль компании в Facebook</span>
-        <li class="social-item"><a href="#0" class="social-icon social-instagramm"></a></li>
-        <span class="form-hint">Профиль компании в Instagramm</span>
-        <li class="social-item"><a href="#0" class="social-icon social-tumblr"></a></li>
-        <span class="form-hint">Профиль компании в Tumblr</span>
+        <li class="social-item"><a href="#0" class="social-icon social-twitter"></a> <span class="form-hint">Профиль компании в Twitter</span> </li>
+        <li class="social-item"><a href="#0" class="social-icon social-painterest"></a> <span class="form-hint">Профиль компании в Painterestr</span> </li>
+        <li class="social-item"><a href="#0" class="social-icon social-facebook"></a> <span class="form-hint">Профиль компании в Facebook</span> </li>
+        <li class="social-item"><a href="#0" class="social-icon social-instagramm"></a> <span class="form-hint">Профиль компании в Instagramm</span> </li>
+        <li class="social-item"><a href="#0" class="social-icon social-tumblr"></a> <span class="form-hint">Профиль компании в Tumblr</span> </li>
       </ul>
     </div>
     <div class="copyright">
